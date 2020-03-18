@@ -1,9 +1,29 @@
 public class Test {
 
-    public int climbStairs(int n) {
-        if (n < 0) return 0;
-        else if (n == 0 || n == 1) return 1;
-        else return climbStairs(n - 1) + climbStairs(n - 2);
+    public int[] plusOne(int[] digits) {
+        int size = digits.length;
+        boolean allNine = true;
+        for (int i = 0; i < size; i++) {
+            if (digits[i] != 9) {
+                allNine = false;
+                break;
+            }
+        }
+        if (allNine) {
+            int[] res = new int[size + 1];
+            res[0] = 1;
+            return res;
+        } else {
+            for (int i = size - 1; i >= 0; i--) {
+                if (digits[i] != 9) {
+                    digits[i] += 1;
+                    return digits;
+                } else {
+                    digits[i] = 0;
+                }
+            }
+            return digits;
+        }
     }
 
     public static void main(String[] args) {
