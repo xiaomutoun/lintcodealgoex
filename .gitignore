@@ -1,0 +1,3 @@
+# the files that should be ignored
+**/.idea
+**/target
