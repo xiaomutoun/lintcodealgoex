@@ -1,11 +1,10 @@
-package n301_400;
+package array;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
+/** Tag: Deque, Two Pointers, O(n) on array, LintCode
  * Difficulty: Hard
- * Tags: Deque, Two Pointers
  * Company: Zenefits, Google, Microsoft, Amazon
 
  Description:
@@ -19,7 +18,7 @@ import java.util.List;
      Input:
      [1,2,7,7,8]
      3
-     输出:
+     Output:
      [7,7,8]
 
      Explanation：
